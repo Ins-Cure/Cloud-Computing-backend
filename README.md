@@ -21,17 +21,20 @@ In order to run through this whole tutorial, make sure you meet these requiremen
 ## Setting Up Google Cloud Platform
 
 **New Project and Billings**
-1. In your web browser, Go to [Google Cloud Platform](https://console.cloud.google.com/)
+
+1. In your web browser, Go to [Google Cloud Platform](https://console.cloud.google.com/).
 2. Register and Login with your account.
 3. Create a new project.
 4. Create a new billing account and redeem (if you haven't) the [free](https://cloud.google.com/free?hl=en) $300 worth of credits.
 
 **Creating PostgreSQL Instance**
+
 5. On the sidebar of the web, open Cloud SQL.
 6. Create a new PostgreSQL instance with the credentials and settings as you wish. Then, create a new db called ``inscure``
 7. For your information, this instance will store all of the tables that we define in ``/entity`` directory.
 
 **Creating Cloud Storage Bucket**
+
 8. On the sidebar of the web, open Cloud Storage -> Buckets.
 9. Create a new bucket with the credentials and settings as you wish.
 10. Inside that bucket, create 2 folders called ``prediction`` and ``profile_picture``. 
@@ -39,6 +42,7 @@ In order to run through this whole tutorial, make sure you meet these requiremen
 12. Its pretty self explanatory to know the purpose of this bucket by doing this.
 
 **Creating Compute Engine Instance**
+
 13. On the sidebar of the web, 
   - open IAM -> Service Account and create new account
   - open VPC -> Firewall and create a new firewall that allow tcp port 8080 with target name as you wish.
